@@ -1,24 +1,82 @@
-body {
-    padding-top: 50px;
-    background: #051536;
-        /#1d1f20;
-    color: #ddd;
+/* #0D1B35 #364E63 */
+body { background: #000; color:#fff;}
+a {color: #fff;text-decoration:none}
+a:hover {color: #00B9FF;text-decoration:none}
+
+
+/* 				TITLE SECTION */
+.title-section{position:relative;}
+
+
+/*.title-section .intro {background:rgba(100,100,100,.1);}*/
+.title-section .container {padding:20px 250px; text-align: center;  }
+.title-section .intro {}
+
+.title-container {
+	//background: rgba(255,255,255,.1);
+	position: relative;
+	height: 340px;
+	width: 660px;
+	margin: 100px auto 0 auto;
+	color:#fff;
+
 }
-.navbar-brand {font-size: 1.4em;}
-.navbar-nav {font-size: 1.2em;}
 
+.lr-border {
+	text-align: center;
 
-
-#cred {
-    padding: 20px 30px;
-}
-#cred h1 {
-    font-size: 3em;
-}
-#cred h3 {
-    font-size: 2em;
-    margin: 0;
-
+	padding-top: 28px;
+	box-sizing: border-box;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 220px;
+	top: 60px;
+	left: 20px;
 }
 
+.lr-border h1 {
+	margin:0;
+	font-size: 62px;
+	font-family: Merriweather;
+	line-height:initial;
+}
+
+.tb-border{
+	box-sizing: border-box;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	position: absolute;
+	width: calc(100% - 100px);
+	height:300px;
+	left: 50px;
+	top:20px;
+}
+
+.intro .container div {font-size:16px;}
+.intro .container a {font-size:16px;}
+#copy {font-size: 13px}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1920px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1920px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -810px;   /* 50% */
+  }
+}
 
