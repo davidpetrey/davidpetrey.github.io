@@ -102,6 +102,8 @@ footer span:first-child a:last-child {border:0;}
 #portfolio a:hover {color:#00B9FF}
 
 .port h4 {margin: 30px 10px}
+.port h4 p {font-size: 16px;}
+.port h4 p span {display:inline-block; color: #ccc;}
 .port > div div {margin-bottom:40px; }
 
 .port > div div a span{}
