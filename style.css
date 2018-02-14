@@ -60,7 +60,7 @@ footer span:first-child a:last-child {border:0;}
 	/**/font-size: 36px;
 	margin:0;
 	font-family: Merriweather;
-	line-height: 65px;
+	line-height: 45px;
 	text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 
 }
@@ -153,7 +153,7 @@ footer span:first-child a:last-child {border:0;}
 
 	.title-container { max-width: 540px; height: 300px;}
 	.lr-border { padding-top: 22px; height: 180px;  top: 55px; }
-	.lr-border h1 { font-size: 52px; }
+	.lr-border h1 { font-size: 52px; line-height:65px; }
 	.tb-border { height: 250px; }
 
 	.title-section .container {   padding: 20px 100px 40px 100px; }
@@ -184,7 +184,8 @@ footer span:first-child a:last-child {border:0;}
 	.title-container { max-width: 660px; height: 340px;}
 	.title-section { padding-top: 70px; }
 	.lr-border { padding-top: 28px; height: 220px; }
-	.lr-border h1 { font-size: 62px; }
+	.lr-border h1 { font-size: 62px; line-height: 85px;}
+
 	.tb-border { height: 300px; }
 	
 	.title-section .container {  padding: 40px 175px 60px 175px; }
