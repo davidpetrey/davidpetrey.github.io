@@ -1,13 +1,13 @@
 /* #0D1B35 #364E63 */
-body {background: #000; color:#fff; padding-top: 30px;padding-bottom: 30px;}
+body {background: #000000; color:#FFFFFF; padding-top: 30px;padding-bottom: 30px;}
 
 a {color:#ddd;text-decoration:none}
 a:hover {color:#00B9FF}
 
 /* 				MENU COLORS */
 header {
-	background: #000; 
-	color: #fff; 
+	background: #000000; 
+	color: #FFFFFF; 
   position: fixed;
   width: 100%;
   top: 0;
@@ -16,30 +16,29 @@ header {
 header a {color:white;text-decoration:none}
 header a:hover {color: #00B9FF;}
 #nav .active { color: #00B9FF; }
-#nav .active:hover { color: #fff; }
-#header-name {color:#fff;}
+#nav .active:hover { color: #FFFFFF; }
+#header-name {color:#FFFFFF;}
 .custom-toggle {top: -1px;}
 .custom-wrapper { height: 30px;}
 .pure-menu-link, .pure-menu-disabled, .pure-menu-heading { padding: 0 15px; line-height: 30px; }
 
 /*  FOOTER  */
-footer {position: fixed; bottom:0; width: 100%; background:#000;}
+footer {position: fixed; bottom:0; width: 100%; background:#000000;}
 footer .container {vertical-align: middle; line-height: 30px; height: 30px; text-align: right; font-size:10px;}
 footer span:first-child{float:left;}
 footer span:first-child a {padding-left: 2px; padding-right:5px;border-right: 1px solid white;}
 footer span:first-child a:last-child {border:0;}
 
 /* 				TITLE SECTION */
-.title-section{padding-top: 20px; background: #253E5F; background: url(img/road-bg.jpg); background-size:cover; background-position:bottom;}
+.title-section{padding-top: 20px; background: #253E5F; background: url(img/road-bg.jpg); background-size:cover; background-position:0 98%;}
 .title-section .container {  padding: 20px 8% 40px 8%; text-align: center;  }
 .title-section .intro {}
 .title-container {
-	//background: rgba(255,255,255,.1);
 	position: relative;
 	height: 200px;
 	/**/max-width: 480px;
 	margin: 0 auto;
-	color:#fff;
+	color:#FFFFFF;
 
 }
 
@@ -77,15 +76,28 @@ footer span:first-child a:last-child {border:0;}
 	top:20px;
 }
 
-.intro .container > div {max-width: 620px;  text-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
+.intro .container > div {max-width: 620px;  text-shadow: 1px 1px 0px rgba(0,0,0,0.6); }
 
+.intro a {
+	display: inline-block;
+    padding: 11px 24px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000;
+    cursor: pointer;
+}
 
+.intro a:hover {
+	color:#00B9FF;
+}
 
 /* 				ABOUT SECTION	 */
 #about-section {background:#4A5056; padding-bottom:40px;} /* bg #555  #7F1C1C*/
 #about-section h1 {font-size:28px; margin-top:1em; margin-bottom:1em;}
 #badges-top > div, #badges-bottom > div {padding-top:15px; }
 #badges-top img, #badges-bottom img {height:100px;}
+#badges-bottom {margin-bottom:1.5em;}
 
 #about-cert img {}
 #about-cert p {margin:0;}
@@ -97,18 +109,31 @@ footer span:first-child a:last-child {border:0;}
 
 /* 				PORTFOLIO PAGE	 */
 #portfolio {background: #4A5B6D;}
-#portfolio {color:#fff;}
-#portfolio a {color:#ccc;}
+#portfolio {color:#FFFFFF;}
+#portfolio a {color:#CCCCCC;}
 #portfolio a:hover {color:#00B9FF}
 
-.port h4 {margin: 30px 10px}
-.port h4 p {font-size: 16px;}
-.port h4 p span {display:inline-block; color: #ccc;}
+.port h3 {margin: 30px 10px}
+.port h3 p {font-size: 16px;}
+.port h3 p span {display:inline; color: #CCCCCC;}
 .port > div div {margin-bottom:40px; }
 
 .port > div div a span{}
 .port > div div a:hover img {}
 .port span {display:block;}
+
+.port .i-container {max-width:400px;}
+.port .ask {
+	float: right;
+    margin: 0;
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+.port .reap a span{color:#FFFFFF;}
+.port .reap a:hover span{color:#00B9FF;}
+.port .p-descript {color:#CCCCCC; margin:0;}
+
 
 
 /*          CONTACT PAGE   */
@@ -124,7 +149,7 @@ footer span:first-child a:last-child {border:0;}
 
 /*               tablet */
 @media only screen and (min-width: 740px) {
-  .title-section{padding-top: 50px;}
+	.title-section{padding-top: 50px;}
 
 	.title-container { max-width: 540px; height: 300px;}
 	.lr-border { padding-top: 22px; height: 180px;  top: 55px; }
@@ -134,12 +159,12 @@ footer span:first-child a:last-child {border:0;}
 	.title-section .container {   padding: 20px 100px 40px 100px; }
 
 	#about-section #badges-bottom {padding-top:30px; }
-  #about-section h1 {font-size:32px;}
+  	#about-section h1 {font-size:32px; margin-top: 1.5em;}
 
-  #about-cert img {
-    height: 250px;
-    display: block;
-  }
+  	#about-cert img {
+    	height: 250px;
+    	display: block;
+  	}
  	
 	#about-cert div:nth-child(3) {width: 30px; margin-left: 5px;}
 	#about-cert div:nth-child(2) a {font-size:16px; margin-top:0 ;}
@@ -157,17 +182,25 @@ footer span:first-child a:last-child {border:0;}
 @media only screen and (min-width: 980px) {
 
 	.title-container { max-width: 660px; height: 340px;}
+	.title-section { padding-top: 70px; }
 	.lr-border { padding-top: 28px; height: 220px; }
 	.lr-border h1 { font-size: 62px; }
 	.tb-border { height: 300px; }
 	
-	.title-section .container {  padding: 20px 175px 40px 175px; }
+	.title-section .container {  padding: 40px 175px 60px 175px; }
+	
+	.intro a {
+	    margin-top: 50px;
+	}
+
+	#about-section h1 { margin-top: 2em; margin-bottom: 1.5em;}
 	
 	#ps {text-align: right; padding-right:50px;}
 	#ps span {padding-right: 17px}
 	#gh {text-align: left; padding-left:50px;}
-	#gh span {padding-left: 26px}
+	#gh span {padding-left: 10px}
 
+	#badges-bottom {margin-top:2em; margin-bottom:3em;}
 	#about-cert h3 {margin-top: 1em} 
 
 	.personal > div:nth-child(2) { padding-right:50px;}
