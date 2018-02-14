@@ -60,7 +60,7 @@ footer span:first-child a:last-child {border:0;}
 	/**/font-size: 36px;
 	margin:0;
 	font-family: Merriweather;
-	line-height:initial;
+	line-height: 65px;
 	text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 
 }
