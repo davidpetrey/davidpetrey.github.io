@@ -15,7 +15,6 @@ a:hover {
   transition: color 200ms ease;
 }
 
-/* 				MENU COLORS */
 /* 				TITLE SECTION */
 .title-section {
   padding-top: 20px;
@@ -88,7 +87,6 @@ a:hover {
   transition: background-color 200ms ease, color 300ms ease;
 }
 
-/* 				PORTFOLIO PAGE	 */
 .port h3 {
   margin: 30px 10px;
 }
@@ -125,8 +123,6 @@ a:hover {
   color: #00B9FF;
 }
 
-/* 				ABOUT SECTION	 */
-/*          CONTACT PAGE   */
 /*  FOOTER  */
 footer {
   position: fixed;
