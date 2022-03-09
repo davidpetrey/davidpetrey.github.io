@@ -1,0 +1,274 @@
+/* #0D1B35 #364E63 */
+body {background: #111; color:#FFFFFF; padding-bottom: 30px;}
+
+a {
+	color:#ddd;
+	transition: color 200ms ease;
+	text-decoration:none;
+	&:hover {
+		color:#00B9FF; 
+		transition: color 200ms ease;
+	}
+}
+
+/* 				MENU COLORS */
+// header { 
+// 	background: #000000; color: #FFFFFF; position: fixed; width: 100%; top: 0; z-index: 1;   /* bg #2d3e50*/
+// 	a {
+// 		color:white;
+// 		text-decoration:none;
+// 		&:hover {color: #00B9FF}
+// 	}
+// }
+
+// #nav {
+// 	.active { color: #00B9FF; }
+// 	.active:hover { color: #FFFFFF; }
+// }
+// #header-name {color:#FFFFFF;}
+// .custom-toggle {top: -1px;}
+// .custom-wrapper { height: 30px;}
+// .pure-menu-link, .pure-menu-disabled, .pure-menu-heading { padding: 0 15px; line-height: 30px; }
+
+
+
+/* 				TITLE SECTION */
+.title-section {
+	padding-top: 20px; background: #253E5F; background: url(img/road-bg.jpg); background-size:cover; background-position:0 98%;
+	.container {  padding: 20px 8% 40px 8%; text-align: center;  }
+}
+.title-container {
+	position: relative; height: 200px; max-width: 480px; margin: 0 auto; color:#FFFFFF;
+}
+.lr-border {
+	text-align: center; box-sizing: border-box; border-left: 1px solid; border-right: 1px solid; position: absolute; width: calc(100% - 40px); left: 20px; padding-top: 14px; height: 120px; top: 40px;
+	h1 { font-size: 36px; margin:0; font-family: Merriweather; line-height: 45px; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+}
+.tb-border{ box-sizing: border-box; border-top:1px solid; border-bottom:1px solid; position: absolute; width: calc(100% - 100px); height:160px; left: 50px; top:20px; }
+
+.intro {
+	.container > div {
+		// text-align: right;
+		font-size: 16px;
+		max-width: 100%;  
+		margin: 0 auto;
+		text-shadow: 1px 1px 0px rgba(0,0,0,0.6); 
+	}
+	
+	a { 
+		display: inline-block; padding: 11px 24px; margin-top: 30px; font-size: 16px; cursor: pointer; 
+		background-color: #000b;
+		transition: background-color 200ms ease, color 300ms ease;
+		&:hover {
+			background-color: #000; 
+			transition: background-color 200ms ease, color 300ms ease;
+		}
+	}
+}
+
+
+
+
+
+
+
+/* 				PORTFOLIO PAGE	 */
+// #portfolio {
+// 	background: #4A5B6D; 
+// 	color:#FFFFFF;
+// 	a {
+// 		color:#CCCCCC;
+// 		&:hover {color:#00B9FF}
+// 	}
+// }
+
+.port {
+	h3 {
+		margin: 30px 10px;
+		p {
+			font-size: 16px;
+			span {display:inline; color: #CCCCCC;}
+		}
+	}
+
+	.ex-wrapper { margin-bottom: 40px; }
+	span {display:block;}
+	.i-container {max-width:400px;}
+	
+	.ask { float: right; margin: 0; color: #CCCCCC; font-size: 12px; }
+	.p-descript {color:#CCCCCC; margin:0;}
+
+	.reap {
+		a {
+			span { color:#FFFFFF; }
+			&:hover span { color:#00B9FF; }
+		}
+	}
+}
+
+
+
+/* 				ABOUT SECTION	 */
+// #about-section {background:#4A5056; padding-bottom:40px;} /* bg #555  #7F1C1C*/
+// #about-section h1 {font-size:28px; margin-top:1em; margin-bottom:1em;}
+// #badges-top > div, #badges-bottom > div {padding-top:15px; }
+// #badges-top img, #badges-bottom img {height:100px;}
+// #badges-bottom {margin-bottom:1.5em;}
+
+// #about-cert p {margin:0;}
+// #about-cert h3 {margin-top: 0} 
+// #about-cert div:nth-child(2){max-width: 70%; }
+// #about-cert div:nth-child(2) a {font-size:12px; margin-top:-8px ;display:block;}
+
+
+
+
+/*          CONTACT PAGE   */
+// #contact {background: url(img/lights-bg.jpg) no-repeat 56% 50% fixed; background-size:cover; } 
+// .contact-section > div {    margin-left: 9%;}
+// .contact-section a {display:block;font-size:18px; text-shadow: 1px 1px rgba(0,0,0,8);}
+
+/*  FOOTER  */
+footer {
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	background:#202028;
+	background:#000b;
+	section {
+		padding: 0 15px;
+		vertical-align: middle; line-height: 30px; height: 30px; text-align: right; font-size:10px;
+	}
+	span:first-child{
+		float:left;
+		a {
+			padding-left: 2px; padding-right:5px;border-right: 1px solid white;
+			&:last-child {
+				border:0;
+			}
+		}
+	}
+}
+
+
+/** RESPONSIVE STYLES **/
+
+/*               tablet */
+@media only screen and (min-width: 740px) {
+	.title-section { 
+		padding-top: 50px;
+		.container {   
+			padding: 20px 100px 40px 100px; 
+		}
+	}
+
+	.title-container { max-width: 540px; height: 300px;}
+	.lr-border { 
+		padding-top: 22px; height: 180px;  top: 60px; 
+		h1 { font-size: 52px; line-height:65px; }
+	}
+	.tb-border { height: 250px; }
+
+	.intro {
+		.container > div {
+			// text-align: right;
+			font-size: 22px;
+			line-height: 1.5em;
+			max-width: 90%;  
+			margin-bottom: 20px;
+		}
+		.view-button {
+			margin-bottom: 10px;
+		}
+	}
+
+
+	// #about-section {
+	// 	#badges-bottom {padding-top:30px; }
+  	// 	h1 {font-size:32px; margin-top: 1.5em;}
+	// }
+
+  	// #about-cert img {
+    // 	height: 250px;
+    // 	display: block;
+  	// }
+ 	
+	// #about-cert div {
+	// 	&:nth-child(3) {width: 30px; margin-left: 5px;}
+	// 	&:nth-child(2) a {font-size:16px; margin-top:0 ;}
+	// }
+
+	footer section {font-size:12px;}
+
+	.personal { 
+		> div {
+ 			&:nth-child(2) { padding-right:15px;}
+			&:last-child {padding-left:15px;}
+		}
+	}
+
+}
+
+
+/*             desktop */
+@media only screen and (min-width: 980px) {
+
+	.title-container { max-width: 660px; height: 340px;}
+	.title-section { 
+		padding-top: 70px; 
+		min-height: calc(100vh - 30px);
+		.container {  padding: 40px 175px 60px 175px; }
+	}
+
+	.lr-border { 
+		padding-top: 25px; height: 220px;
+		h1 { font-size: 62px; line-height: 85px;}
+	}
+
+	.tb-border { height: 300px; }
+	
+	.intro {
+		.container > div {
+			text-align: right;
+			font-weight: 300;
+			font-size: 22px;
+			max-width: 90%;  
+			margin: 0 auto;
+			text-shadow: 1px 1px 0px rgba(0,0,0,0.6); 
+		}
+	}
+	.intro a {
+	    margin-top: 50px;
+	}
+
+	#about-section h1 { margin-top: 2em; margin-bottom: 1.5em;}
+	
+	#ps {
+		text-align: right; 
+		padding-right:50px;
+		span  {padding-right: 17px }
+	}
+	#gh {
+		text-align: left; 
+		padding-left:50px;
+		span { padding-left: 10px }
+	}
+
+	#badges-bottom {margin-top:2em; margin-bottom:3em;}
+	#about-cert h3 {margin-top: 1em} 
+
+	.personal { 
+		> div {
+ 			&:nth-child(2) { padding-right:50px;}
+			&:last-child {padding-left:50px;}
+		}
+	}
+}
+
+
+/*                hd */
+@media only screen and (min-width: 1140px) {
+	.title-section .container {
+		padding:20px 250px 40px 250px;  
+	}
+}
