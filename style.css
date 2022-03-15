@@ -3,6 +3,7 @@ body {
   background: #111;
   color: #FFFFFF;
   padding-bottom: 30px;
+  cursor: text;
 }
 
 a {
@@ -90,12 +91,53 @@ a:hover {
 .port h3 {
   margin: 30px 10px;
 }
-.port h3 p {
+.port p {
   font-size: 16px;
 }
-.port h3 p span {
+.port p span {
   display: inline;
   color: #CCCCCC;
+}
+.port .lennox .site-heading {
+  font-size: 18px;
+  margin: 0 10px;
+}
+.port .sssnext, .port .sssprev {
+  opacity: 0.7;
+  height: calc(100% - 22px);
+}
+.port .sssnext:hover, .port .sssprev:hover {
+  cursor: default;
+  -webkit-animation: pulse2 800ms cubic-bezier(0.2, 0.4, 0.8, 0.6) infinite;
+          animation: pulse2 800ms cubic-bezier(0.2, 0.4, 0.8, 0.6) infinite;
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse2 {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .port .ex-wrapper {
   margin-bottom: 40px;

@@ -1,5 +1,5 @@
 /* #0D1B35 #364E63 */
-body {background: #111; color:#FFFFFF; padding-bottom: 30px;}
+body {background: #111; color:#FFFFFF; padding-bottom: 30px; cursor:text}
 
 a {
 	color:#ddd;
@@ -56,11 +56,35 @@ a {
 .port {
 	h3 {
 		margin: 30px 10px;
+	}
 		p {
 			font-size: 16px;
 			span {display:inline; color: #CCCCCC;}
 		}
+
+	.lennox {
+		// a {cursor:default}
+		.site-heading{
+			font-size: 18px;
+			margin: 0 10px;
+		}
 	}
+
+
+	.sssnext, .sssprev{ opacity:.7; height: calc(100% - 22px) }
+	.sssnext:hover, .sssprev:hover{
+		cursor:default;
+		animation: pulse2 800ms cubic-bezier(0.2, .4, .8, .6) infinite;   
+	}
+		
+	
+	@keyframes pulse2 { 
+		0% { opacity: 1 }
+		45% { opacity: .5 }  
+		55% { opacity: .5 }  
+		100% { opacity: 1 }
+	}
+
 
 	.ex-wrapper { margin-bottom: 40px; }
 	span {display:block;}
@@ -100,6 +124,8 @@ footer {
 		}
 	}
 }
+
+
 
 
 /** RESPONSIVE STYLES **/
