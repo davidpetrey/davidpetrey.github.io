@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="sss/sss.css">
-	
-	
+
+
 
 
 </head>
@@ -58,11 +58,11 @@
               <div>
                 Hi, I'm Dave.
                 <br>I'm a Front-End Web Developer with a passion for creating excellent customer experiences... <em>with code</em>.
-         
+
               </div>
                 <a class="view-button" href="portfolio.html">View my portfolio</a>
             </div>
-            
+
         </div>
     </section>
 
@@ -83,10 +83,25 @@
 
     <section class="port">
 
-
         <div class="container clear">
             <div id="portScroll"></div>
             <h1>Portfolio</h1>
+
+            <div class="nasa-api clear">
+                <h3>
+                    Images From Space
+                    <p><span>Small Ajax project using NASA's Mars Rover API</span></p>
+                </h3>
+                <div class="ex-wrapper col-12 col-10-tablet clear">
+                    <a href="/nasa-api/" target="_blank">
+                        <span></span>
+                        <img src="img/new/images-from-space2-opt.png" class="img-fluid">
+                        <span>Try it</span>
+                    </a>
+                </div>
+            </div>
+
+
 			<div class="lennox">
 				<h3>Lennox International</h3>
 				<div class="wyw">
@@ -139,15 +154,15 @@
 
 
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,7 +170,7 @@
 		<div class="container clear">
 
             <h3>Oak Cliff Bible Fellowship
-                <p> 
+                <p>
 					<span> I worked on this project at AM Digital Agency. Implemented various features and fixes, performed testing, and developed custom post types along with their templates and pages.</span>
 				</p>
             </h3>
@@ -176,15 +191,15 @@
                     </div>
                 </a>
             </div>
-        
+
         </div>
-        
+
 
 
         <div class="container clear">
 
             <h3>T-Mobile Email templates &amp; Landing pages
-                
+
                 <p>Tech: <span>HTML, CSS, JavaScript, jQuery</span></p>
             </h3>
 
@@ -202,7 +217,7 @@
             </div>
 
         </div>
-        
+
         <div class="container clear reap">
 
             <h3>Websites built while working at Reap Marketing
@@ -219,7 +234,7 @@
             </div>
             <div class="ex-wrapper col-12 col-6-tablet clear">
                 <a href="https://www.asdonline.com" target="_blank">
-                    <span>ASD MARKETWEEK:</span> 
+                    <span>ASD MARKETWEEK:</span>
                     <p class="p-descript">Homepage and Optimizely testing</p>
                     <img src="img/asd.jpg" class="img-fluid">
                 </a>
@@ -269,16 +284,16 @@
                 </a>
             </div>
 
-        </div>          
+        </div>
 
     </section>
 
 
     <footer>
         <section>
-                <span>            
+                <span>
                     <a href="https://www.linkedin.com/in/davidpetrey" target="_blank">Linkedin</a>
-                    <a href="https://github.com/davidpetrey" target="_blank">GitHub</a> 
+                    <a href="https://github.com/davidpetrey" target="_blank">GitHub</a>
                 </span>
                 <span>
                     &copy; 2022 David Petrey
@@ -300,12 +315,12 @@
       $(document).ready(function() {
           $("a.view-button").click(function(event) {
               event.preventDefault();
-				document.getElementById('portScroll').scrollIntoView({ 
-				behavior: 'smooth' 
+				document.getElementById('portScroll').scrollIntoView({
+				behavior: 'smooth'
 			});
         });
 
-		
+
 		$('.slider1').sss({
 			slideShow : true, // Set to false to prevent SSS from automatically animating.
 			startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
